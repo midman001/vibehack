@@ -1,52 +1,60 @@
 :root {
-    /* Colors - Strict Visual Guidelines */
-    --color-canvas-bg: #EEEEEB;
-    /* Main page background */
-    --color-bg-emphasized: #F6F6F3;
-    /* Section background */
-    --color-bg-focus: #FDFCFA;
-    /* Highlight/Card background */
+    /* Colors - Midl Visual Language System */
 
-    --color-accent-primary: #F7931A;
-    /* Bitcoin Orange */
+    /* Backgrounds & Blocks */
+    --color-canvas-bg: #EEEEEB;
+    /* bg-midl-canvas */
+    --color-bg-emphasized: #F6F6F3;
+    /* bg-midl-surface-1 */
+    --color-bg-focus: #FDFCFA;
+    /* bg-midl-surface-2 */
     --color-accent-dark: #1A1A1A;
-    /* Deep almost-black for blocks/footer */
+    /* bg-midl-accent (Footer/Blocks) */
+
+    /* Accents */
+    --color-accent-primary: #F7931A;
+    /* Bitcoin Orange (Brand Core) */
 
     /* Text Colors */
     --color-text-main: #030303;
-    /* Primary Text: Deep almost black */
+    /* text-midl-primary */
     --color-text-muted: #969696;
-    /* Secondary Text: Mid gray */
-    --color-border: rgba(0, 0, 0, 0.08);
+    /* text-midl-secondary */
+
+    /* Borders */
+    --color-border: rgba(0, 0, 0, 0.06);
     /* Subtle outline */
 
     /* Gradients */
     --gradient-main: linear-gradient(180deg, var(--color-bg-focus) 0%, var(--color-canvas-bg) 100%);
     --gradient-accent: linear-gradient(90deg, #FF7E3D 0%, #FFDE7B 100%);
     /* Soft orange -> yellow */
+    --gradient-accent-2: linear-gradient(90deg, #F67710 0%, #FDBF2D 100%);
+    /* Stronger orange */
     --gradient-glow: radial-gradient(circle at center, rgba(255, 126, 61, 0.15) 0%, transparent 60%);
 
     /* Typography */
-    --font-heading: 'Space Grotesk', sans-serif;
+    /* Metric: Object Sans (Using Plus Jakarta Sans as closest free alternative) */
+    --font-heading: 'Plus Jakarta Sans', sans-serif;
     --font-body: 'Inter', sans-serif;
 
     /* Spacing */
     --spacing-sm: 0.5rem;
-    --spacing-md: 1rem;
-    --spacing-lg: 2rem;
-    --spacing-xl: 5rem;
-    /* Increased for roominess */
+    --spacing-md: 1.5rem;
+    --spacing-lg: 3rem;
+    --spacing-xl: 10rem;
+    /* Spacious */
 
     /* Effects */
-    --radius-sm: 8px;
+    --radius-sm: 12px;
     --radius-md: 24px;
+    /* Large frames */
 
-    /* Flat Design - No Shadows */
+    /* Flat Design */
     --shadow-card: none;
-    --glass-bg: rgba(253, 252, 250, 0.9);
-    --glass-border: 1px solid rgba(0, 0, 0, 0.06);
+    --glass-bg: rgba(253, 252, 250, 0.95);
+    --glass-border: 1px solid rgba(0, 0, 0, 0.04);
     --backdrop-blur: blur(0px);
-    /* Minimized depth */
 
     --color-card-bg: var(--color-bg-focus);
     --color-card-hover: #FFFFFF;
@@ -93,7 +101,7 @@ ul {
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--color-bg-deep);
+    background: var(--color-canvas-bg);
 }
 
 ::-webkit-scrollbar-thumb {

@@ -1,9 +1,11 @@
 import React from 'react';
 import { Sparkles, ArrowRight } from 'lucide-react';
-import heroBg from '../assets/hero-bg.png';
+import heroBg from '../assets/hero-new.jpg';
+import telegramIcon from '../assets/telegram-icon.png';
 import '../styles/animations.css';
 
 const Hero: React.FC = () => {
+  // Mouse parallax effect
   const [mousePos, setMousePos] = React.useState({ x: 0, y: 0 });
 
   React.useEffect(() => {
@@ -23,19 +25,21 @@ const Hero: React.FC = () => {
       <div
         className="hero-background"
         style={{
-          transform: `translate(${mousePos.x * -40}px, ${mousePos.y * -40}px) scale(1.1)`,
+          transform: `translate(${mousePos.x * -10}px, ${mousePos.y * -10}px) scale(1.05)`
         }}
       >
-        <div className="glow-orb orb-1"></div>
-        <div className="glow-orb orb-2"></div>
       </div>
 
       <nav className="navbar animate-fade-in">
-        <div className="logo">Midl</div>
+        <div className="logo-container">
+          <img src="/midl-wordmark.png" alt="Midl" className="logo-image" />
+        </div>
         <div className="social-links">
           <a href="https://x.com/midl_xyz" target="_blank" rel="noreferrer">𝕏</a>
           <a href="https://discord.com/invite/midl" target="_blank" rel="noreferrer">👾</a>
-          <a href="https://t.me/midl_xyz" target="_blank" rel="noreferrer">✈️</a>
+          <a href="https://t.me/midl_xyz" target="_blank" rel="noreferrer" className="icon-link">
+            <img src={telegramIcon} alt="Telegram" />
+          </a>
         </div>
       </nav>
 
@@ -51,13 +55,17 @@ const Hero: React.FC = () => {
         </h1>
 
         <p className="hero-subtitle animate-fade-in" style={{ animationDelay: '0.3s' }}>
-          Not anymore. Welcome to the Midl Vibe Coding Contest.
+          Not anymore. <br /> <br />
+          Welcome to the Midl Vibe Coding Contest.
           This isn’t your standard, sweaty hackathon, this is a playground.
         </p>
 
         <div className="hero-actions animate-fade-in" style={{ animationDelay: '0.4s' }}>
-          <a href="#mission" className="btn btn-primary hover-lift">
-            Start Building <ArrowRight size={20} />
+          <a href="#mission" className="btn btn-primary">
+            Learn more
+          </a>
+          <a href="#submit-dapp" className="btn btn-link">
+            Submit your dApp <ArrowRight size={20} />
           </a>
         </div>
       </div>
@@ -72,55 +80,27 @@ const Hero: React.FC = () => {
           padding: var(--spacing-xl) var(--spacing-md);
           overflow: hidden;
           text-align: center;
-          background-color: var(--color-canvas-bg); /* Match global bg */
+          background-color: var(--color-canvas-bg);
+          z-index: 1;
         }
 
         .hero-background {
           position: absolute;
-          inset: -50px; /* Increased overscan for amplified parallax */
-          z-index: 0;
+          inset: -20px;
+          z-index: -1;
           background-image: url("${heroBg}");
           background-size: cover;
           background-position: center;
-          opacity: 0.6; /* Increased opacity for light mode */
-          transition: transform 0.05s linear; /* Smoother, faster response */
+          opacity: 0.6; /* Increased opacity as requested */
+          transition: transform 0.1s ease-out;
+          /* Seamless blend using mask */
+          -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+          mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
         }
 
-        .hero-background::after {
-          content: '';
-          position: absolute;
-          inset: 0;
-          background: linear-gradient(to bottom, transparent 0%, var(--color-canvas-bg) 100%);
-        }
-
-        /* Legacy orbs for extra glow if needed, or hide them */
-        .glow-orb {
-          position: absolute;
-          border-radius: 50%;
-          filter: blur(80px);
-          opacity: 0.2;
-        }
-
-        .orb-1 {
-          width: 300px;
-          height: 300px;
-          background: var(--color-accent-primary);
-          top: -10%;
-          left: 20%;
-          animation: float 6s ease-in-out infinite;
-        }
-
-        .orb-2 {
-          width: 400px;
-          height: 400px;
-          background: var(--color-accent-primary); /* Changed to primary orange from secondary */
-          bottom: -10%;
-          right: 20%;
-          animation: float 8s ease-in-out infinite reverse;
-        }
 
         .hero-content {
-          max-width: 800px;
+          max-width: 900px; /* Increased max-width for roominess */
           z-index: 1;
         }
 
@@ -129,7 +109,7 @@ const Hero: React.FC = () => {
           align-items: center;
           gap: 8px;
           padding: 8px 16px;
-          background: var(--color-bg-focus);
+          background: var(--color-bg-emphasized);
           border: 1px solid var(--color-border);
           border-radius: 100px;
           color: var(--color-accent-primary);
@@ -143,6 +123,7 @@ const Hero: React.FC = () => {
           line-height: 1.1;
           margin-bottom: 24px;
           letter-spacing: -2px;
+          font-weight: 500; /* Removed bold (usually 700), set to medium/regular */
         }
 
         .text-gradient {
@@ -153,17 +134,19 @@ const Hero: React.FC = () => {
         }
 
         .hero-subtitle {
-          font-size: 1.25rem;
-          color: var(--color-text-muted);
-          max-width: 600px;
+          font-size: 1.5rem; /* Increased size */
+          color: #000000; /* Pure black as requested "like unertitle" */
+          max-width: 700px;
           margin: 0 auto 40px;
-          line-height: 1.6;
+          line-height: 1.5;
+          font-weight: 500; /* Slightly more weight for the black text */
         }
 
         .hero-actions {
           display: flex;
-          gap: 16px;
+          gap: 32px; /* More space between buttons */
           justify-content: center;
+          align-items: center;
           flex-wrap: wrap;
         }
 
@@ -171,35 +154,41 @@ const Hero: React.FC = () => {
           display: inline-flex;
           align-items: center;
           gap: 8px;
-          padding: 16px 32px;
-          border-radius: 12px;
-          font-weight: 600;
+          padding: 14px 32px;
+          border-radius: 100px; /* Full pill */
+          font-weight: 500;
           font-size: 1.1rem;
           transition: all 0.3s ease;
           border: none;
           cursor: pointer;
+          text-decoration: none;
         }
 
+        /* "Join the Action" style */
         .btn-primary {
-          background: var(--color-accent-primary);
+          background: transparent;
           color: #000;
-          box-shadow: none; /* Flat design */
-        }
-        .btn-primary:hover {
-          background: #FFB04E; /* Lighter orange on hover */
-          transform: translateY(-2px);
+          border: 1px solid #000;
           box-shadow: none;
         }
-
-        .btn-secondary {
-          background: var(--color-bg-focus);
-          border: 1px solid var(--color-border);
-          color: var(--color-text-main);
-          backdrop-filter: blur(0);
+        
+        .btn-primary:hover {
+          background: rgba(0,0,0,0.05); /* Subtle tint on hover */
+          transform: translateY(-2px);
         }
-        .btn-secondary:hover {
-          background: var(--color-bg-emphasized);
-          border-color: var(--color-border);
+
+        /* "Learn More" style */
+        .btn-link {
+          background: transparent;
+          color: #000;
+          border: none;
+          padding: 8px 16px; /* Less padding for link */
+          font-weight: 500;
+        }
+
+        .btn-link:hover {
+            opacity: 0.7;
+            transform: translateX(4px); /* Move right instead of up */
         }
 
         .icon-pulse {
@@ -218,15 +207,21 @@ const Hero: React.FC = () => {
             z-index: 10;
         }
 
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 800;
-            letter-spacing: -1px;
-            color: var(--color-text-main);
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-image {
+            height: 32px; /* Adjusted for wordmark */
+            width: auto;
+            object-fit: contain;
         }
 
         .social-links {
             display: flex;
+            align-items: center;
             gap: 1rem;
         }
 
@@ -234,10 +229,17 @@ const Hero: React.FC = () => {
             font-size: 1.2rem;
             opacity: 0.7;
             transition: opacity 0.2s;
+            display: flex;
+            align-items: center;
         }
         
         .social-links a:hover {
             opacity: 1;
+        }
+        
+        .social-links img {
+            width: 20px;
+            height: auto;
         }
       `}</style>
     </section>

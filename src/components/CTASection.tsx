@@ -1,0 +1,157 @@
+import React, { useState } from 'react';
+import { X, ArrowRight } from 'lucide-react';
+import ctaBg from '../assets/cta-bg.png';
+
+const CTASection: React.FC = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    return (
+        <>
+            <section id="submit-dapp" className="cta-section">
+                <div className="cta-background"></div>
+                <div className="container">
+                    <div className="cta-content">
+                        <h2 className="cta-title">Ready to build the future of Bitcoin?</h2>
+                        <p className="cta-subtitle">
+                            The tools are ready. The prize pool is set. The only thing missing is you.
+                        </p>
+                        <button className="btn btn-primary lg hover-lift" onClick={() => setIsModalOpen(true)}>
+                            Submit Your dApp <ArrowRight size={24} />
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            {isModalOpen && (
+                <div className="modal-overlay">
+                    <div className="modal-content">
+                        <button className="close-btn" onClick={() => setIsModalOpen(false)}>
+                            <X size={24} />
+                        </button>
+                        <iframe
+                            src="https://quasar-orbit-aa5.notion.site/ebd//2f6362757c9880e981c3d60161bec9f3"
+                            width="100%"
+                            height="100%"
+                            frameBorder="0"
+                            allowFullScreen
+                        />
+                    </div>
+                </div>
+            )}
+
+            <style>{`
+        .cta-section {
+          padding: var(--spacing-xl) var(--spacing-md);
+          background-color: var(--color-bg-emphasized);
+          text-align: center;
+          position: relative;
+          overflow: hidden;
+        }
+
+        .cta-background {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            background-image: url("${ctaBg}");
+            background-size: cover;
+            background-position: center;
+            opacity: 0.4;
+            pointer-events: none;
+        }
+
+.container {
+    position: relative;
+    z-index: 1; /* Ensure content is above bg */
+    max-width: 800px;
+    margin: 0 auto;
+}
+        /* Subtle background accent for emphasis */
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--color-accent-primary), transparent);
+            opacity: 0.3;
+        }
+
+        .cta-content {
+          max-width: 800px;
+          margin: 0 auto;
+        }
+
+        .cta-title {
+          font-size: clamp(2.5rem, 5vw, 4rem);
+          margin-bottom: 1.5rem;
+          color: var(--color-text-main);
+          letter-spacing: -1px;
+        }
+
+        .cta-subtitle {
+          font-size: 1.25rem;
+          color: var(--color-text-muted);
+          margin-bottom: 3rem;
+          max-width: 600px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .btn.lg {
+            font-size: 1.25rem;
+            padding: 1.25rem 3rem;
+            border-radius: 100px;
+            gap: 12px;
+        }
+        
+        .modal-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.8);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            backdrop-filter: blur(5px);
+        }
+
+        .modal-content {
+            background: white;
+            width: 95%;
+            max-width: 1000px;
+            height: 90vh;
+            border-radius: var(--radius-md);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: white;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: none;
+            border: 1px solid var(--color-border);
+            z-index: 10;
+        }
+        
+        .close-btn:hover {
+            background: var(--color-bg-emphasized);
+        }
+      `}</style>
+        </>
+    );
+};
+
+export default CTASection;

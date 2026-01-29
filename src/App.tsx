@@ -2,6 +2,7 @@ import Hero from './components/Hero';
 import Mission from './components/Mission';
 import Timeline from './components/Timeline';
 import Toolkit from './components/Toolkit';
+import CTASection from './components/CTASection';
 import Footer from './components/Footer';
 import './index.css';
 
@@ -12,6 +13,7 @@ function App() {
       <Mission />
       <Timeline />
       <Toolkit />
+      <CTASection />
       <Footer />
     </div>
   );
