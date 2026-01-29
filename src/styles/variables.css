@@ -1,0 +1,102 @@
+:root {
+    /* Colors - Strict Visual Guidelines */
+    --color-canvas-bg: #EEEEEB;
+    /* Main page background */
+    --color-bg-emphasized: #F6F6F3;
+    /* Section background */
+    --color-bg-focus: #FDFCFA;
+    /* Highlight/Card background */
+
+    --color-accent-primary: #F7931A;
+    /* Bitcoin Orange */
+    --color-accent-dark: #1A1A1A;
+    /* Deep almost-black for blocks/footer */
+
+    /* Text Colors */
+    --color-text-main: #030303;
+    /* Primary Text: Deep almost black */
+    --color-text-muted: #969696;
+    /* Secondary Text: Mid gray */
+    --color-border: rgba(0, 0, 0, 0.08);
+    /* Subtle outline */
+
+    /* Gradients */
+    --gradient-main: linear-gradient(180deg, var(--color-bg-focus) 0%, var(--color-canvas-bg) 100%);
+    --gradient-accent: linear-gradient(90deg, #FF7E3D 0%, #FFDE7B 100%);
+    /* Soft orange -> yellow */
+    --gradient-glow: radial-gradient(circle at center, rgba(255, 126, 61, 0.15) 0%, transparent 60%);
+
+    /* Typography */
+    --font-heading: 'Space Grotesk', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    /* Spacing */
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 5rem;
+    /* Increased for roominess */
+
+    /* Effects */
+    --radius-sm: 8px;
+    --radius-md: 24px;
+
+    /* Flat Design - No Shadows */
+    --shadow-card: none;
+    --glass-bg: rgba(253, 252, 250, 0.9);
+    --glass-border: 1px solid rgba(0, 0, 0, 0.06);
+    --backdrop-blur: blur(0px);
+    /* Minimized depth */
+
+    --color-card-bg: var(--color-bg-focus);
+    --color-card-hover: #FFFFFF;
+}
+
+body {
+    background-color: var(--color-canvas-bg);
+    color: var(--color-text-main);
+    font-family: var(--font-body);
+    margin: 0;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+    margin-top: 0;
+    color: var(--color-text-main);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: opacity 0.2s;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-bg-deep);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-accent-primary);
+    border-radius: 4px;
+}

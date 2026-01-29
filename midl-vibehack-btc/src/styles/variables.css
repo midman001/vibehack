@@ -1,0 +1,76 @@
+:root {
+  /* Colors */
+  --color-bg-deep: #050505;
+  --color-bg-charcoal: #121212;
+  --color-accent-primary: #F7931A; /* Bitcoin Orange */
+  --color-accent-secondary: #9D4EDD; /* Electric Purple */
+  --color-accent-cyan: #00F0FF;
+  
+  --color-text-main: #FFFFFF;
+  --color-text-muted: #A0A0A0;
+  --color-border: rgba(255, 255, 255, 0.1);
+  
+  /* Gradients */
+  --gradient-main: linear-gradient(135deg, var(--color-bg-deep) 0%, var(--color-bg-charcoal) 100%);
+  --gradient-accent: linear-gradient(90deg, var(--color-accent-primary) 0%, #FFB04D 100%);
+  --gradient-glow: radial-gradient(circle at center, rgba(247, 147, 26, 0.15) 0%, transparent 70%);
+  
+  /* Typography */
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  
+  /* Spacing */
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+  
+  /* Effects */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --shadow-card: 0 10px 30px -10px rgba(0,0,0,0.5);
+  --glass-bg: rgba(255, 255, 255, 0.03);
+  --glass-border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+body {
+  background-color: var(--color-bg-deep);
+  color: var(--color-text-main);
+  font-family: var(--font-body);
+  margin: 0;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  margin-top: 0;
+  color: var(--color-text-main);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.2s;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg-deep);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-accent-primary);
+  border-radius: 4px;
+}
