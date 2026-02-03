@@ -1,0 +1,155 @@
+{
+  "hero": {
+    "badge": "Midl VibeHack BTC",
+    "title": {
+      "line1": "在比特币上构建",
+      "line2": "曾经很难。"
+    },
+    "subtitle": {
+      "line1": "现在不再是了。",
+      "line2": "欢迎来到 Midl Vibe 编程大赛。",
+      "line3": "这不是传统的黑客马拉松，这是一个创意乐园。"
+    },
+    "buttons": {
+      "learnMore": "了解更多",
+      "submit": "提交你的 dApp"
+    },
+    "deadline": "截止日期前",
+    "typewriter": "这是我们最资深的开发者构建的。他一行代码都没看过。接受现实吧"
+  },
+  "mission": {
+    "title": "任务",
+    "lead": "从\"如果...会怎样？\"到\"交易已确认。\"",
+    "cards": {
+      "vibeCode": {
+        "title": "Vibe 编程",
+        "description": "拿起一个原始想法，用 AI 加速开发，在几天内而非几个月在 Midl 测试网上运行一个可行的概念。"
+      },
+      "midlPower": {
+        "title": "Midl 的力量",
+        "description": "体验 Midl 基础设施的无摩擦力量。如果你知道如何提示，你就已经知道如何在比特币上构建。"
+      },
+      "makeItPop": {
+        "title": "让它亮眼",
+        "description": "我们正在提高视觉标准。没有默认的 UI。你的应用应该像一个产品。"
+      }
+    },
+    "requirements": {
+      "title": "要求",
+      "steps": {
+        "step1": {
+          "title": "前端设计",
+          "description": "用合适的 UI 展示你的 AI 设计技能。"
+        },
+        "step2": {
+          "title": "用户流程",
+          "description": "用户在你的 UI 中触发一个操作。"
+        },
+        "step3": {
+          "title": "逻辑与交互",
+          "description": "操作与 Midl 基础设施（RPC/SDK）交互。"
+        },
+        "step4": {
+          "title": "链上证明",
+          "description": "结果可通过交易哈希验证。"
+        },
+        "step5": {
+          "title": "反馈循环",
+          "description": "UI 更新以反映新状态。"
+        }
+      }
+    },
+    "deliverables": {
+      "title": "必需交付物",
+      "subtitle": "如果本地运行，则不需要部署。",
+      "items": {
+        "videoDemo": {
+          "title": "视频演示",
+          "description": "完整循环：应用展示、钱包连接、用户操作、签名、UI 更新。"
+        },
+        "transactionProof": {
+          "title": "交易证明",
+          "description": "已部署合约和成功交易的链接。"
+        },
+        "codeRepository": {
+          "title": "代码仓库",
+          "description": "仓库链接或代码演示视频。"
+        },
+        "publicPost": {
+          "title": "公开帖子",
+          "description": "你的提交社交帖子链接。"
+        }
+      }
+    }
+  },
+  "timeline": {
+    "title": "计划",
+    "sectionTitle": "时间线",
+    "prizes": {
+      "grand": {
+        "title": "大奖",
+        "amount": "$1000 USDT",
+        "description": "献给终极 vibe 编程者。"
+      },
+      "community": {
+        "title": "社区奖",
+        "amount": "CLAUDE 积分",
+        "description": "前5名参赛作品可获得 $200 积分"
+      }
+    },
+    "phases": {
+      "kickoff": {
+        "title": "启动",
+        "date": "[插入日期]"
+      },
+      "submission": {
+        "title": "提交窗口",
+        "duration": "7 天"
+      },
+      "voting": {
+        "title": "投票期",
+        "duration": "社区 (2 天) + 评审团 (5 天)"
+      }
+    },
+    "evaluation": {
+      "title": "评估标准",
+      "phase1": {
+        "title": "阶段1：社区投票",
+        "description": "在 X 上通过公众投票入围前5名。"
+      },
+      "phase2": {
+        "title": "阶段2：评审团",
+        "description": "根据技术执行、Midl 熟练度和产品感觉进行评判。"
+      }
+    }
+  },
+  "toolkit": {
+    "title": "构建者工具包",
+    "subtitle": "我们消除了复杂性，让你专注于构建。",
+    "tools": {
+      "sdk": "Midl SDK",
+      "docs": "文档",
+      "github": "Github 仓库",
+      "faucet": "水龙头",
+      "midlExplorer": "Midl 浏览器",
+      "btcExplorer": "比特币浏览器"
+    },
+    "support": {
+      "title": "支持与氛围",
+      "description": "加入对话，寻找队友，分享你的胜利。",
+      "button": "加入 Discord"
+    }
+  },
+  "cta": {
+    "title": "准备好构建比特币的未来了吗？",
+    "subtitle": "工具已就绪。奖池已设定。唯一缺少的就是你。",
+    "button": "提交你的 dApp"
+  },
+  "footer": {
+    "copyright": "© {{year}} Midl. 保留所有权利。"
+  },
+  "languageToggle": {
+    "en": "EN",
+    "zh": "中文"
+  }
+}

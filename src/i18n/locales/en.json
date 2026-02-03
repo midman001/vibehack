@@ -1,0 +1,155 @@
+{
+  "hero": {
+    "badge": "Midl VibeHack BTC",
+    "title": {
+      "line1": "Building on Bitcoin",
+      "line2": "used to be hard."
+    },
+    "subtitle": {
+      "line1": "Not anymore.",
+      "line2": "Welcome to the Midl Vibe Coding Contest.",
+      "line3": "This isn't your standard, sweaty hackathon, this is a playground."
+    },
+    "buttons": {
+      "learnMore": "Learn more",
+      "submit": "Submit your dApp"
+    },
+    "deadline": "Before END DATE",
+    "typewriter": "This was built by our most experienced dev. He didn't look at a single line of it. Deal with it"
+  },
+  "mission": {
+    "title": "The Mission",
+    "lead": "Go from \"What if?\" to \"Transaction Confirmed.\"",
+    "cards": {
+      "vibeCode": {
+        "title": "Vibe Code",
+        "description": "Take a raw idea, use AI to speed-run the development, and run a working concept on Midl's testnet in days, not months."
+      },
+      "midlPower": {
+        "title": "Midl Power",
+        "description": "Experience the friction-free power of Midl infrastructure. If you know how to prompt, you already know how to build on Bitcoin."
+      },
+      "makeItPop": {
+        "title": "Make it Pop",
+        "description": "We are raising the bar on visuals. No default UIs. Your app should feel like a product."
+      }
+    },
+    "requirements": {
+      "title": "The Requirements",
+      "steps": {
+        "step1": {
+          "title": "Front End Design",
+          "description": "Demonstrate your AI design skills with a proper UI."
+        },
+        "step2": {
+          "title": "User Flow",
+          "description": "A user triggers an action in your UI."
+        },
+        "step3": {
+          "title": "Logic & Interaction",
+          "description": "Action interacts with Midl infrastructure (RPC/SDK)."
+        },
+        "step4": {
+          "title": "On-Chain Proof",
+          "description": "Result verifiable via transaction hash."
+        },
+        "step5": {
+          "title": "Feedback Loop",
+          "description": "UI updates to reflect the new state."
+        }
+      }
+    },
+    "deliverables": {
+      "title": "Required Deliverables",
+      "subtitle": "Deployment is not required if it runs locally.",
+      "items": {
+        "videoDemo": {
+          "title": "Video Demo",
+          "description": "Full loop: App presentation, Wallet connect, User Action, Sign, UI Update."
+        },
+        "transactionProof": {
+          "title": "Transaction Proof",
+          "description": "Links to deployed contracts and successful transactions."
+        },
+        "codeRepository": {
+          "title": "Code Repository",
+          "description": "Link to repo or code walkthrough video."
+        },
+        "publicPost": {
+          "title": "Public Post",
+          "description": "Link to your submission social post."
+        }
+      }
+    }
+  },
+  "timeline": {
+    "title": "The Plan",
+    "sectionTitle": "Timeline",
+    "prizes": {
+      "grand": {
+        "title": "Grand Prize",
+        "amount": "$1000 USDT",
+        "description": "For the ultimate vibe coder."
+      },
+      "community": {
+        "title": "Community Prize",
+        "amount": "CLAUDE Credits",
+        "description": "$200 of credits for top 5 entries"
+      }
+    },
+    "phases": {
+      "kickoff": {
+        "title": "Kickoff",
+        "date": "[INSERT DATE]"
+      },
+      "submission": {
+        "title": "Submission Window",
+        "duration": "7 Days"
+      },
+      "voting": {
+        "title": "Voting period",
+        "duration": "Community (2 days) + Council (5 days)"
+      }
+    },
+    "evaluation": {
+      "title": "Evaluation Criteria",
+      "phase1": {
+        "title": "Phase 1: Community Vote",
+        "description": "Top 5 shortlisted by public vote on X."
+      },
+      "phase2": {
+        "title": "Phase 2: The Council",
+        "description": "Judged on Technical Execution, Midl Mastery, and Product Feel."
+      }
+    }
+  },
+  "toolkit": {
+    "title": "The Builder's Toolkit",
+    "subtitle": "We've stripped away the complexity so you can focus on building.",
+    "tools": {
+      "sdk": "Midl SDK",
+      "docs": "Documentation",
+      "github": "Github Repo",
+      "faucet": "Faucet",
+      "midlExplorer": "Midl Explorer",
+      "btcExplorer": "Bitcoin Explorer"
+    },
+    "support": {
+      "title": "Support & Vibes",
+      "description": "Join the conversation, find teammates, and share your wins.",
+      "button": "Join Discord"
+    }
+  },
+  "cta": {
+    "title": "Ready to build the future of Bitcoin?",
+    "subtitle": "The tools are ready. The prize pool is set. The only thing missing is you.",
+    "button": "Submit Your dApp"
+  },
+  "footer": {
+    "copyright": "© {{year}} Midl. All rights reserved."
+  },
+  "languageToggle": {
+    "en": "EN",
+    "zh": "中文"
+  }
+}

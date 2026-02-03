@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { X, ArrowRight } from 'lucide-react';
 import ctaBg from '../assets/cta-bg.jpeg';
 
 const CTASection: React.FC = () => {
+    const { t } = useTranslation();
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     return (
@@ -11,12 +13,12 @@ const CTASection: React.FC = () => {
                 <div className="cta-background"></div>
                 <div className="container">
                     <div className="cta-content">
-                        <h2 className="cta-title">Ready to build the future of Bitcoin?</h2>
+                        <h2 className="cta-title">{t('cta.title')}</h2>
                         <p className="cta-subtitle">
-                            The tools are ready. The prize pool is set. The only thing missing is you.
+                            {t('cta.subtitle')}
                         </p>
                         <button className="btn btn-primary lg hover-lift" onClick={() => setIsModalOpen(true)}>
-                            Submit Your dApp <ArrowRight size={24} />
+                            {t('cta.button')} <ArrowRight size={24} />
                         </button>
                     </div>
                 </div>

@@ -1,37 +1,40 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { ExternalLink, Terminal, Book, Box } from 'lucide-react';
 
 const Toolkit: React.FC = () => {
+  const { t } = useTranslation();
+
   const tools = [
-    { name: 'Midl SDK', url: 'https://js.midl.xyz/', icon: <Box /> },
-    { name: 'Documentation', url: 'https://v2.js.midl.xyz/docs', icon: <Book /> },
-    { name: 'Github Repo', url: 'https://github.com/midl-xyz/midl-js', icon: <Terminal /> },
-    { name: 'Faucet', url: 'https://faucet.midl.xyz/', icon: <ExternalLink /> },
-    { name: 'Midl Explorer', url: 'https://blockscout.staging.midl.xyz', icon: <ExternalLink /> },
-    { name: 'Bitcoin Explorer', url: 'https://mempool.staging.midl.xyz', icon: <ExternalLink /> },
+    { nameKey: 'toolkit.tools.sdk', url: 'https://js.midl.xyz/', icon: <Box /> },
+    { nameKey: 'toolkit.tools.docs', url: 'https://v2.js.midl.xyz/docs', icon: <Book /> },
+    { nameKey: 'toolkit.tools.github', url: 'https://github.com/midl-xyz/midl-js', icon: <Terminal /> },
+    { nameKey: 'toolkit.tools.faucet', url: 'https://faucet.midl.xyz/', icon: <ExternalLink /> },
+    { nameKey: 'toolkit.tools.midlExplorer', url: 'https://blockscout.staging.midl.xyz', icon: <ExternalLink /> },
+    { nameKey: 'toolkit.tools.btcExplorer', url: 'https://mempool.staging.midl.xyz', icon: <ExternalLink /> },
   ];
 
   return (
     <section id="toolkit" className="toolkit-section">
       <div className="container">
-        <h2 className="section-title">The Builder’s Toolkit</h2>
-        <p className="subtitle">We’ve stripped away the complexity so you can focus on building.</p>
+        <h2 className="section-title">{t('toolkit.title')}</h2>
+        <p className="subtitle">{t('toolkit.subtitle')}</p>
 
         <div className="tools-grid">
           {tools.map((tool) => (
-            <a key={tool.name} href={tool.url} target="_blank" rel="noopener noreferrer" className="tool-card hover-lift">
+            <a key={tool.nameKey} href={tool.url} target="_blank" rel="noopener noreferrer" className="tool-card hover-lift">
               <div className="icon-wrapper">{tool.icon}</div>
-              <h3>{tool.name}</h3>
+              <h3>{t(tool.nameKey)}</h3>
               <div className="arrow">→</div>
             </a>
           ))}
         </div>
 
         <div className="support-vibes">
-          <h3>Support & Vibes</h3>
-          <p>Join the conversation, find teammates, and share your wins.</p>
+          <h3>{t('toolkit.support.title')}</h3>
+          <p>{t('toolkit.support.description')}</p>
           <a href="https://discord.com/invite/midl" target="_blank" rel="noopener noreferrer" className="btn btn-discord hover-lift">
-            Join Discord
+            {t('toolkit.support.button')}
           </a>
         </div>
       </div>

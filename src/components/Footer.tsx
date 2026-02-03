@@ -1,12 +1,15 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { SocialLinks } from './SocialIcons';
 
 const Footer: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="site-footer">
       <div className="footer-bottom">
         <div className="container">
-          <p>© {new Date().getFullYear()} Midl. All rights reserved.</p>
+          <p>{t('footer.copyright', { year: new Date().getFullYear() })}</p>
           <SocialLinks size={20} className="footer-socials" />
         </div>
       </div>

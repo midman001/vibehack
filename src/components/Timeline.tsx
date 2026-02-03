@@ -1,68 +1,71 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Calendar, Trophy, CheckCircle } from 'lucide-react';
 
 const Timeline: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="timeline" className="timeline-section">
       <div className="container">
-        <h2 className="section-title text-gradient">The Plan</h2>
+        <h2 className="section-title text-gradient">{t('timeline.title')}</h2>
 
         <div className="prize-banner hover-lift">
           <div className="prize-block">
             <Trophy size={48} className="icon-gold" />
             <div className="prize-content">
-              <h3>Grand Prize</h3>
-              <p className="prize-amount">$1000 USDT</p>
-              <p>For the ultimate vibe coder.</p>
+              <h3>{t('timeline.prizes.grand.title')}</h3>
+              <p className="prize-amount">{t('timeline.prizes.grand.amount')}</p>
+              <p>{t('timeline.prizes.grand.description')}</p>
             </div>
           </div>
           <div className="vertical-divider"></div>
           <div className="prize-block">
             <Trophy size={48} className="icon-silver" />
             <div className="prize-content">
-              <h3>Community Prize</h3>
-              <p className="prize-amount">CLAUDE Credits</p>
-              <p>$200 of credits for top 5 entries</p>
+              <h3>{t('timeline.prizes.community.title')}</h3>
+              <p className="prize-amount">{t('timeline.prizes.community.amount')}</p>
+              <p>{t('timeline.prizes.community.description')}</p>
             </div>
           </div>
         </div>
 
         <div className="split-layout">
           <div className="timeline-column">
-            <h3>Timeline</h3>
+            <h3>{t('timeline.sectionTitle')}</h3>
             <div className="timeline-item">
               <Calendar className="icon-accent" />
               <div>
-                <h4>Kickoff</h4>
-                <p>[INSERT DATE]</p>
+                <h4>{t('timeline.phases.kickoff.title')}</h4>
+                <p>{t('timeline.phases.kickoff.date')}</p>
               </div>
             </div>
             <div className="timeline-item">
               <Calendar className="icon-accent" />
               <div>
-                <h4>Submission Window</h4>
-                <p>7 Days</p>
+                <h4>{t('timeline.phases.submission.title')}</h4>
+                <p>{t('timeline.phases.submission.duration')}</p>
               </div>
             </div>
             <div className="timeline-item">
               <CheckCircle className="icon-accent" />
               <div>
-                <h4>Voting period</h4>
-                <p>Community (2 days) + Council (5 days)</p>
+                <h4>{t('timeline.phases.voting.title')}</h4>
+                <p>{t('timeline.phases.voting.duration')}</p>
               </div>
             </div>
           </div>
 
           <div className="evaluation-column">
-            <h3>Evaluation Criteria</h3>
+            <h3>{t('timeline.evaluation.title')}</h3>
             <ul className="criteria-list">
               <li>
-                <strong>Phase 1: Community Vote</strong>
-                <p>Top 5 shortlisted by public vote on X.</p>
+                <strong>{t('timeline.evaluation.phase1.title')}</strong>
+                <p>{t('timeline.evaluation.phase1.description')}</p>
               </li>
               <li>
-                <strong>Phase 2: The Council</strong>
-                <p>Judged on Technical Execution, Midl Mastery, and Product Feel.</p>
+                <strong>{t('timeline.evaluation.phase2.title')}</strong>
+                <p>{t('timeline.evaluation.phase2.description')}</p>
               </li>
             </ul>
           </div>

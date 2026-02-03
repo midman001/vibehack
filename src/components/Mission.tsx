@@ -1,102 +1,96 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import '../styles/animations.css';
 
 const Mission: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="mission" className="mission-section">
       <div className="container">
-        <h2 className="section-title text-gradient animate-fade-in">The Mission</h2>
+        <h2 className="section-title text-gradient animate-fade-in">{t('mission.title')}</h2>
         <p className="lead-text animate-fade-in">
-          Go from "What if?" to "Transaction Confirmed."
+          {t('mission.lead')}
         </p>
 
         <div className="grid-layout">
           <div className="glass-card hover-lift">
-            <h3>Vibe Code</h3>
-            <p>
-              Take a raw idea, use AI to speed-run the development, and run a working
-              concept on Midl’s testnet in days, not months.
-            </p>
+            <h3>{t('mission.cards.vibeCode.title')}</h3>
+            <p>{t('mission.cards.vibeCode.description')}</p>
           </div>
 
           <div className="glass-card hover-lift">
-            <h3>Midl Power</h3>
-            <p>
-              Experience the friction-free power of Midl infrastructure. If you know how
-              to prompt, you already know how to build on Bitcoin.
-            </p>
+            <h3>{t('mission.cards.midlPower.title')}</h3>
+            <p>{t('mission.cards.midlPower.description')}</p>
           </div>
 
           <div className="glass-card hover-lift">
-            <h3>Make it Pop</h3>
-            <p>
-              We are raising the bar on visuals. No default UIs.
-              Your app should feel like a product.
-            </p>
+            <h3>{t('mission.cards.makeItPop.title')}</h3>
+            <p>{t('mission.cards.makeItPop.description')}</p>
           </div>
         </div>
 
         <div className="requirements-section">
-          <h3>The Requirements</h3>
+          <h3>{t('mission.requirements.title')}</h3>
           <div className="roadmap">
             <div className="checkpoint">
               <div className="marker">1</div>
               <div className="content">
-                <h4>Front End Design</h4>
-                <p>Demonstrate your AI design skills with a proper UI.</p>
+                <h4>{t('mission.requirements.steps.step1.title')}</h4>
+                <p>{t('mission.requirements.steps.step1.description')}</p>
               </div>
             </div>
             <div className="checkpoint">
               <div className="marker">2</div>
               <div className="content">
-                <h4>User Flow</h4>
-                <p>A user triggers an action in your UI.</p>
+                <h4>{t('mission.requirements.steps.step2.title')}</h4>
+                <p>{t('mission.requirements.steps.step2.description')}</p>
               </div>
             </div>
             <div className="checkpoint">
               <div className="marker">3</div>
               <div className="content">
-                <h4>Logic & Interaction</h4>
-                <p>Action interacts with Midl infrastructure (RPC/SDK).</p>
+                <h4>{t('mission.requirements.steps.step3.title')}</h4>
+                <p>{t('mission.requirements.steps.step3.description')}</p>
               </div>
             </div>
             <div className="checkpoint">
               <div className="marker">4</div>
               <div className="content">
-                <h4>On-Chain Proof</h4>
-                <p>Result verifiable via transaction hash.</p>
+                <h4>{t('mission.requirements.steps.step4.title')}</h4>
+                <p>{t('mission.requirements.steps.step4.description')}</p>
               </div>
             </div>
             <div className="checkpoint">
               <div className="marker">5</div>
               <div className="content">
-                <h4>Feedback Loop</h4>
-                <p>UI updates to reflect the new state.</p>
+                <h4>{t('mission.requirements.steps.step5.title')}</h4>
+                <p>{t('mission.requirements.steps.step5.description')}</p>
               </div>
             </div>
           </div>
         </div>
 
         <div className="deliverables-section">
-          <h3>Required Deliverables</h3>
-          <p className="subtitle">Deployment is not required if it runs locally.</p>
+          <h3>{t('mission.deliverables.title')}</h3>
+          <p className="subtitle">{t('mission.deliverables.subtitle')}</p>
 
           <div className="deliverables-grid">
             <div className="deliverable-card">
-              <h4>Video Demo</h4>
-              <p>Full loop: App presentation, Wallet connect, User Action, Sign, UI Update.</p>
+              <h4>{t('mission.deliverables.items.videoDemo.title')}</h4>
+              <p>{t('mission.deliverables.items.videoDemo.description')}</p>
             </div>
             <div className="deliverable-card">
-              <h4>Transaction Proof</h4>
-              <p>Links to deployed contracts and successful transactions.</p>
+              <h4>{t('mission.deliverables.items.transactionProof.title')}</h4>
+              <p>{t('mission.deliverables.items.transactionProof.description')}</p>
             </div>
             <div className="deliverable-card">
-              <h4>Code Repository</h4>
-              <p>Link to repo or code walkthrough video.</p>
+              <h4>{t('mission.deliverables.items.codeRepository.title')}</h4>
+              <p>{t('mission.deliverables.items.codeRepository.description')}</p>
             </div>
             <div className="deliverable-card">
-              <h4>Public Post</h4>
-              <p>Link to your submission social post.</p>
+              <h4>{t('mission.deliverables.items.publicPost.title')}</h4>
+              <p>{t('mission.deliverables.items.publicPost.description')}</p>
             </div>
           </div>
         </div>

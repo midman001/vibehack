@@ -1,11 +1,14 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { ArrowRight } from 'lucide-react';
 import heroBg from '../assets/hero-new.jpg';
 import { SocialLinks } from './SocialIcons';
 import TypeWriter from './TypeWriter';
+import LanguageToggle from './LanguageToggle';
 import '../styles/animations.css';
 
 const Hero: React.FC = () => {
+  const { t } = useTranslation();
   // Mouse parallax effect
   const [mousePos, setMousePos] = React.useState({ x: 0, y: 0 });
 
@@ -35,40 +38,42 @@ const Hero: React.FC = () => {
         <div className="logo-container">
           <img src="/midl-wordmark.png" alt="Midl" className="logo-image" />
         </div>
-        <SocialLinks size={20} />
+        <div className="navbar-right">
+          <LanguageToggle />
+          <SocialLinks size={20} />
+        </div>
       </nav>
 
       <div className="hero-content">
         <div className="badge animate-fade-in" style={{ animationDelay: '0.1s' }}>
-          <span>Midl VibeHack BTC</span>
+          <span>{t('hero.badge')}</span>
         </div>
 
         <h1 className="hero-title animate-fade-in" style={{ animationDelay: '0.2s' }}>
-          Building on Bitcoin <br />
-          <span className="text-gradient">used to be hard.</span>
+          {t('hero.title.line1')} <br />
+          <span className="text-gradient">{t('hero.title.line2')}</span>
         </h1>
 
         <p className="hero-subtitle animate-fade-in" style={{ animationDelay: '0.3s' }}>
-          Not anymore. <br /> <br />
-          Welcome to the Midl Vibe Coding Contest.
-          This isn’t your standard, sweaty hackathon, this is a playground.
+          {t('hero.subtitle.line1')} <br /> <br />
+          {t('hero.subtitle.line2')} {t('hero.subtitle.line3')}
         </p>
 
         <div className="hero-actions animate-fade-in" style={{ animationDelay: '0.4s' }}>
           <a href="#mission" className="btn btn-primary">
-            Learn more
+            {t('hero.buttons.learnMore')}
           </a>
           <div className="submit-wrapper">
             <a href="#submit-dapp" className="btn btn-link">
-              Submit your dApp <ArrowRight size={20} />
+              {t('hero.buttons.submit')} <ArrowRight size={20} />
             </a>
-            <span className="deadline-sticker">Before END DATE</span>
+            <span className="deadline-sticker">{t('hero.deadline')}</span>
           </div>
         </div>
 
         <div className="typewriter-section animate-fade-in" style={{ animationDelay: '0.5s' }}>
           <TypeWriter
-            text="This was built by our most experienced dev. He didn't look at a single line of it. Deal with it"
+            text={t('hero.typewriter')}
             speed={50}
             loopDelay={2000}
           />
@@ -268,6 +273,12 @@ const Hero: React.FC = () => {
             height: 32px; /* Adjusted for wordmark */
             width: auto;
             object-fit: contain;
+        }
+
+        .navbar-right {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
         }
 
         .typewriter-section {
