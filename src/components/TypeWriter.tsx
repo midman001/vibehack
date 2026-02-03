@@ -15,7 +15,7 @@ const TypeWriter: React.FC<TypeWriterProps> = ({
   const [isDeleting, setIsDeleting] = React.useState(false);
 
   React.useEffect(() => {
-    let timeout: NodeJS.Timeout;
+    let timeout: ReturnType<typeof setTimeout>;
 
     if (!isDeleting) {
       // Typing phase
