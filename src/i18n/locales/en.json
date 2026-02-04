@@ -14,8 +14,9 @@
       "learnMore": "Learn more",
       "submit": "Submit your dApp"
     },
-    "deadline": "Before END DATE",
-    "typewriter": "This was built by our most experienced dev. He didn't look at a single line of it. Deal with it"
+    "deadline": "Before Feb. 23rd",
+    "typewriter": "This was built by our most experienced dev. He didn't look at a single line of it. Deal with it",
+    "sponsoredBy": "Sponsored By"
   },
   "mission": {
     "title": "The Mission",
@@ -42,18 +43,22 @@
           "description": "Demonstrate your AI design skills with a proper UI."
         },
         "step2": {
+          "title": "Xverse Wallet",
+          "description": "User connects to your dApp with Xverse Wallet."
+        },
+        "step3": {
           "title": "User Flow",
           "description": "A user triggers an action in your UI."
         },
-        "step3": {
+        "step4": {
           "title": "Logic & Interaction",
           "description": "Action interacts with Midl infrastructure (RPC/SDK)."
         },
-        "step4": {
+        "step5": {
           "title": "On-Chain Proof",
           "description": "Result verifiable via transaction hash."
         },
-        "step5": {
+        "step6": {
           "title": "Feedback Loop",
           "description": "UI updates to reflect the new state."
         }
@@ -86,29 +91,68 @@
     "title": "The Plan",
     "sectionTitle": "Timeline",
     "prizes": {
-      "grand": {
-        "title": "Grand Prize",
-        "amount": "$1000 USDT",
-        "description": "For the ultimate vibe coder."
+      "title": "Prize Pool",
+      "note": "Top 5 selected by public vote",
+      "first": {
+        "place": "1st",
+        "cash": "$1000 USDT",
+        "credits": "$200 Claude Credits",
+        "xverse": {
+          "tag": "Xverse Scale-Up Package",
+          "value": "Value $490 + Mentorship",
+          "bullet1": "5 Months of Developer Plan + RPC Access",
+          "bullet2": "Direct Mentorship: Access to Xverse engineering team on Discord and exclusive Joint Group Onboarding session"
+        },
+        "badge": "Council Selected"
       },
-      "community": {
-        "title": "Community Prize",
-        "amount": "CLAUDE Credits",
-        "description": "$200 of credits for top 5 entries"
+      "second": {
+        "place": "2nd",
+        "credits": "$200 Claude Credits",
+        "xverse": {
+          "tag": "Xverse Builders Package",
+          "value": "Value $294 + Mentorship",
+          "bullet1": "3 Months of Developer Plan + RPC Access",
+          "bullet2": "Direct Mentorship: Access to Xverse engineering team on Discord and exclusive Joint Group Onboarding session"
+        }
+      },
+      "third": {
+        "place": "3rd",
+        "credits": "$200 Claude Credits",
+        "xverse": {
+          "tag": "Xverse Kickstart Package",
+          "value": "Value $196",
+          "bullet1": "2 Months of Developer Plan + RPC Access",
+          "bullet2": "Access to the exclusive Joint Group Onboarding session"
+        }
+      },
+      "fourth": {
+        "place": "4th",
+        "credits": "$200 Claude Credits"
+      },
+      "fifth": {
+        "place": "5th",
+        "credits": "$200 Claude Credits"
       }
     },
     "phases": {
       "kickoff": {
-        "title": "Kickoff",
-        "date": "[INSERT DATE]"
+        "title": "Contest Kickoff",
+        "date": "Monday, February 9th"
       },
       "submission": {
-        "title": "Submission Window",
-        "duration": "7 Days"
+        "title": "Submissions Close",
+        "date": "Monday, February 23rd - 00:00",
+        "duration": "14 Days"
       },
-      "voting": {
-        "title": "Voting period",
-        "duration": "Community (2 days) + Council (5 days)"
+      "publicVote": {
+        "title": "Public Vote",
+        "date": "February 24th-25th",
+        "announcement": "Winners announced February 25th"
+      },
+      "councilVote": {
+        "title": "Council Vote",
+        "date": "February 25th-28th",
+        "announcement": "Final winners announced February 28th"
       }
     },
     "evaluation": {
@@ -132,12 +176,66 @@
       "github": "Github Repo",
       "faucet": "Faucet",
       "midlExplorer": "Midl Explorer",
-      "btcExplorer": "Bitcoin Explorer"
+      "btcExplorer": "Bitcoin Explorer",
+      "xverse": "Xverse Wallet",
+      "contestDetails": "Contest Details"
     },
     "support": {
       "title": "Support & Vibes",
       "description": "Join the conversation, find teammates, and share your wins.",
       "button": "Join Discord"
+    }
+  },
+  "council": {
+    "title": "The Council",
+    "subtitle": "Meet the judges who will select the grand prize winner",
+    "comingSoon": "Council members will be announced soon",
+    "members": {
+      "member1": {
+        "name": "Judge Name",
+        "catchphrase": "Building the future of Bitcoin",
+        "bio": {
+          "line1": "Placeholder bio line 1",
+          "line2": "Placeholder bio line 2",
+          "line3": "Placeholder bio line 3"
+        }
+      },
+      "member2": {
+        "name": "Judge Name",
+        "catchphrase": "Empowering developers worldwide",
+        "bio": {
+          "line1": "Placeholder bio line 1",
+          "line2": "Placeholder bio line 2",
+          "line3": "Placeholder bio line 3"
+        }
+      },
+      "member3": {
+        "name": "Judge Name",
+        "catchphrase": "Innovation through simplicity",
+        "bio": {
+          "line1": "Placeholder bio line 1",
+          "line2": "Placeholder bio line 2",
+          "line3": "Placeholder bio line 3"
+        }
+      },
+      "member4": {
+        "name": "Judge Name",
+        "catchphrase": "Code is poetry",
+        "bio": {
+          "line1": "Placeholder bio line 1",
+          "line2": "Placeholder bio line 2",
+          "line3": "Placeholder bio line 3"
+        }
+      },
+      "member5": {
+        "name": "Judge Name",
+        "catchphrase": "Decentralizing everything",
+        "bio": {
+          "line1": "Placeholder bio line 1",
+          "line2": "Placeholder bio line 2",
+          "line3": "Placeholder bio line 3"
+        }
+      }
     }
   },
   "cta": {

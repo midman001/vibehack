@@ -15,7 +15,8 @@
       "submit": "Soumettre votre dApp"
     },
     "deadline": "Avant la DATE LIMITE",
-    "typewriter": "Ceci a été construit par notre développeur le plus expérimenté. Il n'a pas regardé une seule ligne de code. C'est comme ça"
+    "typewriter": "Ceci a été construit par notre développeur le plus expérimenté. Il n'a pas regardé une seule ligne de code. C'est comme ça",
+    "sponsoredBy": "Parrainé par"
   },
   "mission": {
     "title": "La Mission",
@@ -56,6 +57,10 @@
         "step5": {
           "title": "Boucle de Feedback",
           "description": "L'UI se met à jour pour refléter le nouvel état."
+        },
+        "step6": {
+          "title": "Utiliser Xverse Wallet",
+          "description": "Intégrez le portefeuille Xverse pour permettre à vos utilisateurs de se connecter au réseau"
         }
       }
     },
@@ -86,29 +91,65 @@
     "title": "Le Plan",
     "sectionTitle": "Calendrier",
     "prizes": {
-      "grand": {
-        "title": "Grand Prix",
-        "amount": "$1000 USDT",
-        "description": "Pour le codeur vibe ultime."
+      "title": "Cagnotte",
+      "note": "Top 5 sélectionné par vote public",
+      "first": {
+        "place": "1ère Place",
+        "cash": "$1000 USDT",
+        "credits": "+ $200 Crédits Claude",
+        "xverse": {
+          "tag": "Pack Scale-Up Xverse",
+          "value": "Valeur $490 + Mentorat",
+          "details": "Plan Développeur 5 mois + Accès RPC, Slack/Discord privé avec l'équipe d'ingénierie Xverse, Onboarding de groupe"
+        },
+        "badge": "Sélectionné par le Conseil"
       },
-      "community": {
-        "title": "Prix Communauté",
-        "amount": "Crédits CLAUDE",
-        "description": "$200 de crédits pour les 5 meilleures entrées"
+      "second": {
+        "place": "2ème Place",
+        "credits": "$200 Crédits Claude",
+        "xverse": {
+          "tag": "Pack Builders Xverse",
+          "value": "Valeur $294 + Mentorat",
+          "details": "Plan Développeur 3 mois + Accès RPC, Slack/Discord privé, Onboarding de groupe"
+        }
+      },
+      "third": {
+        "place": "3ème Place",
+        "credits": "$200 Crédits Claude",
+        "xverse": {
+          "tag": "Pack Kickstart Xverse",
+          "value": "Valeur $196",
+          "details": "Plan Développeur 2 mois + Accès RPC, Onboarding de groupe"
+        }
+      },
+      "fourth": {
+        "place": "4ème Place",
+        "credits": "$200 Crédits Claude Code"
+      },
+      "fifth": {
+        "place": "5ème Place",
+        "credits": "$200 Crédits Claude Code"
       }
     },
     "phases": {
       "kickoff": {
-        "title": "Lancement",
-        "date": "[INSÉRER DATE]"
+        "title": "Lancement du Concours",
+        "date": "Lundi 9 février"
       },
       "submission": {
-        "title": "Fenêtre de Soumission",
-        "duration": "7 Jours"
+        "title": "Clôture des Soumissions",
+        "date": "Lundi 23 février - 00:00",
+        "duration": "14 Jours"
       },
-      "voting": {
-        "title": "Période de Vote",
-        "duration": "Communauté (2 jours) + Conseil (5 jours)"
+      "publicVote": {
+        "title": "Vote Public",
+        "date": "24-25 février",
+        "announcement": "Gagnants annoncés le 25 février"
+      },
+      "councilVote": {
+        "title": "Vote du Conseil",
+        "date": "25-28 février",
+        "announcement": "Gagnants finaux annoncés le 28 février"
       }
     },
     "evaluation": {
@@ -132,12 +173,66 @@
       "github": "Repo Github",
       "faucet": "Faucet",
       "midlExplorer": "Explorateur Midl",
-      "btcExplorer": "Explorateur Bitcoin"
+      "btcExplorer": "Explorateur Bitcoin",
+      "xverse": "Xverse Wallet",
+      "contestDetails": "Détails du Concours"
     },
     "support": {
       "title": "Support & Ambiance",
       "description": "Rejoignez la conversation, trouvez des coéquipiers et partagez vos victoires.",
       "button": "Rejoindre Discord"
+    }
+  },
+  "council": {
+    "title": "Le Conseil",
+    "subtitle": "Rencontrez les juges qui sélectionneront le gagnant du grand prix",
+    "comingSoon": "Les membres du conseil seront annoncés prochainement",
+    "members": {
+      "member1": {
+        "name": "Nom du Juge",
+        "catchphrase": "Construire l'avenir de Bitcoin",
+        "bio": {
+          "line1": "Bio placeholder ligne 1",
+          "line2": "Bio placeholder ligne 2",
+          "line3": "Bio placeholder ligne 3"
+        }
+      },
+      "member2": {
+        "name": "Nom du Juge",
+        "catchphrase": "Autonomiser les développeurs du monde entier",
+        "bio": {
+          "line1": "Bio placeholder ligne 1",
+          "line2": "Bio placeholder ligne 2",
+          "line3": "Bio placeholder ligne 3"
+        }
+      },
+      "member3": {
+        "name": "Nom du Juge",
+        "catchphrase": "L'innovation par la simplicité",
+        "bio": {
+          "line1": "Bio placeholder ligne 1",
+          "line2": "Bio placeholder ligne 2",
+          "line3": "Bio placeholder ligne 3"
+        }
+      },
+      "member4": {
+        "name": "Nom du Juge",
+        "catchphrase": "Le code est poésie",
+        "bio": {
+          "line1": "Bio placeholder ligne 1",
+          "line2": "Bio placeholder ligne 2",
+          "line3": "Bio placeholder ligne 3"
+        }
+      },
+      "member5": {
+        "name": "Nom du Juge",
+        "catchphrase": "Décentraliser tout",
+        "bio": {
+          "line1": "Bio placeholder ligne 1",
+          "line2": "Bio placeholder ligne 2",
+          "line3": "Bio placeholder ligne 3"
+        }
+      }
     }
   },
   "cta": {

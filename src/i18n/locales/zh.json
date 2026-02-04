@@ -15,7 +15,8 @@
       "submit": "提交你的 dApp"
     },
     "deadline": "截止日期前",
-    "typewriter": "这是我们最资深的开发者构建的。他一行代码都没看过。接受现实吧"
+    "typewriter": "这是我们最资深的开发者构建的。他一行代码都没看过。接受现实吧",
+    "sponsoredBy": "赞助商"
   },
   "mission": {
     "title": "任务",
@@ -56,6 +57,10 @@
         "step5": {
           "title": "反馈循环",
           "description": "UI 更新以反映新状态。"
+        },
+        "step6": {
+          "title": "使用 Xverse 钱包",
+          "description": "集成 Xverse 钱包，让用户连接到网络"
         }
       }
     },
@@ -86,29 +91,65 @@
     "title": "计划",
     "sectionTitle": "时间线",
     "prizes": {
-      "grand": {
-        "title": "大奖",
-        "amount": "$1000 USDT",
-        "description": "献给终极 vibe 编程者。"
+      "title": "奖池",
+      "note": "前5名由公众投票选出",
+      "first": {
+        "place": "第1名",
+        "cash": "$1000 USDT",
+        "credits": "+ $200 Claude 积分",
+        "xverse": {
+          "tag": "Xverse 成长套餐",
+          "value": "价值 $490 + 导师指导",
+          "details": "5个月开发者计划 + RPC 访问，与 Xverse 工程团队的私人 Slack/Discord，联合团体入门培训"
+        },
+        "badge": "评委会精选"
       },
-      "community": {
-        "title": "社区奖",
-        "amount": "CLAUDE 积分",
-        "description": "前5名参赛作品可获得 $200 积分"
+      "second": {
+        "place": "第2名",
+        "credits": "$200 Claude 积分",
+        "xverse": {
+          "tag": "Xverse 构建者套餐",
+          "value": "价值 $294 + 导师指导",
+          "details": "3个月开发者计划 + RPC 访问，私人 Slack/Discord，联合团体入门培训"
+        }
+      },
+      "third": {
+        "place": "第3名",
+        "credits": "$200 Claude 积分",
+        "xverse": {
+          "tag": "Xverse 启动套餐",
+          "value": "价值 $196",
+          "details": "2个月开发者计划 + RPC 访问，联合团体入门培训"
+        }
+      },
+      "fourth": {
+        "place": "第4名",
+        "credits": "$200 Claude Code 积分"
+      },
+      "fifth": {
+        "place": "第5名",
+        "credits": "$200 Claude Code 积分"
       }
     },
     "phases": {
       "kickoff": {
-        "title": "启动",
-        "date": "[插入日期]"
+        "title": "大赛启动",
+        "date": "2月9日，星期一"
       },
       "submission": {
-        "title": "提交窗口",
-        "duration": "7 天"
+        "title": "提交截止",
+        "date": "2月23日，星期一 - 00:00",
+        "duration": "14 天"
       },
-      "voting": {
-        "title": "投票期",
-        "duration": "社区 (2 天) + 评审团 (5 天)"
+      "publicVote": {
+        "title": "公众投票",
+        "date": "2月24日-25日",
+        "announcement": "获奖者于2月25日公布"
+      },
+      "councilVote": {
+        "title": "评委会投票",
+        "date": "2月25日-28日",
+        "announcement": "最终获奖者于2月28日公布"
       }
     },
     "evaluation": {
@@ -132,12 +173,66 @@
       "github": "Github 仓库",
       "faucet": "水龙头",
       "midlExplorer": "Midl 浏览器",
-      "btcExplorer": "比特币浏览器"
+      "btcExplorer": "比特币浏览器",
+      "xverse": "Xverse 钱包",
+      "contestDetails": "大赛详情"
     },
     "support": {
       "title": "支持与氛围",
       "description": "加入对话，寻找队友，分享你的胜利。",
       "button": "加入 Discord"
+    }
+  },
+  "council": {
+    "title": "评委会",
+    "subtitle": "认识将选出大奖得主的评委们",
+    "comingSoon": "评委会成员即将公布",
+    "members": {
+      "member1": {
+        "name": "评委姓名",
+        "catchphrase": "构建比特币的未来",
+        "bio": {
+          "line1": "简介占位符第1行",
+          "line2": "简介占位符第2行",
+          "line3": "简介占位符第3行"
+        }
+      },
+      "member2": {
+        "name": "评委姓名",
+        "catchphrase": "赋能全球开发者",
+        "bio": {
+          "line1": "简介占位符第1行",
+          "line2": "简介占位符第2行",
+          "line3": "简介占位符第3行"
+        }
+      },
+      "member3": {
+        "name": "评委姓名",
+        "catchphrase": "以简约驱动创新",
+        "bio": {
+          "line1": "简介占位符第1行",
+          "line2": "简介占位符第2行",
+          "line3": "简介占位符第3行"
+        }
+      },
+      "member4": {
+        "name": "评委姓名",
+        "catchphrase": "代码即诗",
+        "bio": {
+          "line1": "简介占位符第1行",
+          "line2": "简介占位符第2行",
+          "line3": "简介占位符第3行"
+        }
+      },
+      "member5": {
+        "name": "评委姓名",
+        "catchphrase": "去中心化一切",
+        "bio": {
+          "line1": "简介占位符第1行",
+          "line2": "简介占位符第2行",
+          "line3": "简介占位符第3行"
+        }
+      }
     }
   },
   "cta": {

@@ -45,8 +45,14 @@ const Hero: React.FC = () => {
       </nav>
 
       <div className="hero-content">
-        <div className="badge animate-fade-in" style={{ animationDelay: '0.1s' }}>
-          <span>{t('hero.badge')}</span>
+        <div className="badge-sponsor-row animate-fade-in" style={{ animationDelay: '0.1s' }}>
+          <div className="badge">
+            <span>{t('hero.badge')}</span>
+          </div>
+          <div className="sponsor-inline">
+            <span className="sponsor-text">{t('hero.sponsoredBy')}</span>
+            <img src="/Xverse_Full_Dark.png" alt="Xverse" className="sponsor-logo" />
+          </div>
         </div>
 
         <h1 className="hero-title animate-fade-in" style={{ animationDelay: '0.2s' }}>
@@ -114,6 +120,15 @@ const Hero: React.FC = () => {
           z-index: 1;
         }
 
+        .badge-sponsor-row {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 20px;
+          margin-bottom: 40px;
+          flex-wrap: wrap;
+        }
+
         .badge {
           display: inline-flex;
           align-items: center;
@@ -125,8 +140,31 @@ const Hero: React.FC = () => {
           color: var(--color-accent-primary);
           font-weight: 500;
           font-size: 1.1rem;
-          margin-bottom: 24px;
           box-shadow: none; /* Flat design */
+        }
+
+        .sponsor-inline {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          padding: 6px 14px;
+          background: rgba(0,0,0,0.03);
+          border: 1px solid var(--color-border);
+          border-radius: 100px;
+        }
+
+        .sponsor-text {
+          font-size: 0.7rem;
+          color: #666;
+          font-weight: 500;
+          letter-spacing: 0.03em;
+          text-transform: uppercase;
+        }
+
+        .sponsor-logo {
+          height: 18px;
+          width: auto;
+          object-fit: contain;
         }
 
         .hero-title {
@@ -159,6 +197,8 @@ const Hero: React.FC = () => {
           justify-content: center;
           align-items: center;
           flex-wrap: wrap;
+          margin: 0 auto;
+          width: fit-content;
         }
 
         .btn {
@@ -282,7 +322,7 @@ const Hero: React.FC = () => {
         }
 
         .typewriter-section {
-          margin-top: 120px;
+          margin-top: 80px;
           padding: 20px;
           max-width: 800px;
         }
@@ -315,6 +355,13 @@ const Hero: React.FC = () => {
           }
           50%, 100% {
             opacity: 0;
+          }
+        }
+
+        @media (max-width: 768px) {
+          .badge-sponsor-row {
+            flex-direction: column;
+            gap: 12px;
           }
         }
 

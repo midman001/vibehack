@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { ExternalLink, Terminal, Book, Box } from 'lucide-react';
+import { ExternalLink, Terminal, Book, Box, Wallet, FileText } from 'lucide-react';
 
 const Toolkit: React.FC = () => {
   const { t } = useTranslation();
@@ -12,6 +12,8 @@ const Toolkit: React.FC = () => {
     { nameKey: 'toolkit.tools.faucet', url: 'https://faucet.midl.xyz/', icon: <ExternalLink /> },
     { nameKey: 'toolkit.tools.midlExplorer', url: 'https://blockscout.staging.midl.xyz', icon: <ExternalLink /> },
     { nameKey: 'toolkit.tools.btcExplorer', url: 'https://mempool.staging.midl.xyz', icon: <ExternalLink /> },
+    { nameKey: 'toolkit.tools.xverse', url: 'https://www.xverse.app/download', icon: <Wallet /> },
+    { nameKey: 'toolkit.tools.contestDetails', url: '#', icon: <FileText /> },
   ];
 
   return (

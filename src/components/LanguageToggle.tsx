@@ -109,7 +109,6 @@ const LanguageToggle: React.FC = () => {
           padding: 4px;
           min-width: 120px;
           z-index: 1000;
-          box-shadow: 0 4px 20px rgba(0,0,0,0.3);
           animation: fadeIn 0.15s ease;
         }
 
@@ -130,7 +129,7 @@ const LanguageToggle: React.FC = () => {
           padding: 8px 12px;
           background: transparent;
           border: none;
-          color: rgba(255,255,255,0.7);
+          color: rgba(0,0,0,0.6);
           font-size: 0.85rem;
           text-align: left;
           cursor: pointer;
@@ -139,7 +138,7 @@ const LanguageToggle: React.FC = () => {
         }
 
         .language-option:hover {
-          background: rgba(255,255,255,0.1);
+          background: rgba(0,0,0,1);
           color: white;
         }
 

@@ -15,7 +15,8 @@
       "submit": "dAppを提出"
     },
     "deadline": "締切前",
-    "typewriter": "これは私たちの最も経験豊富な開発者が構築しました。彼は一行のコードも見ていません。現実を受け入れましょう"
+    "typewriter": "これは私たちの最も経験豊富な開発者が構築しました。彼は一行のコードも見ていません。現実を受け入れましょう",
+    "sponsoredBy": "スポンサー"
   },
   "mission": {
     "title": "ミッション",
@@ -56,6 +57,10 @@
         "step5": {
           "title": "フィードバックループ",
           "description": "UIが新しい状態を反映して更新されます。"
+        },
+        "step6": {
+          "title": "Xverse ウォレットを使用",
+          "description": "Xverse ウォレットを統合して、ユーザーがネットワークに接続できるようにする"
         }
       }
     },
@@ -86,29 +91,65 @@
     "title": "計画",
     "sectionTitle": "タイムライン",
     "prizes": {
-      "grand": {
-        "title": "グランプリ",
-        "amount": "$1000 USDT",
-        "description": "究極のVibeコーダーに。"
+      "title": "賞金プール",
+      "note": "上位5名は公開投票で選出",
+      "first": {
+        "place": "1位",
+        "cash": "$1000 USDT",
+        "credits": "+ $200 Claude クレジット",
+        "xverse": {
+          "tag": "Xverse スケールアップパッケージ",
+          "value": "価値 $490 + メンターシップ",
+          "details": "5ヶ月開発者プラン + RPC アクセス、Xverse エンジニアリングチームとのプライベート Slack/Discord、合同グループオンボーディング"
+        },
+        "badge": "審議会選出"
       },
-      "community": {
-        "title": "コミュニティ賞",
-        "amount": "CLAUDEクレジット",
-        "description": "上位5作品に$200分のクレジット"
+      "second": {
+        "place": "2位",
+        "credits": "$200 Claude クレジット",
+        "xverse": {
+          "tag": "Xverse ビルダーズパッケージ",
+          "value": "価値 $294 + メンターシップ",
+          "details": "3ヶ月開発者プラン + RPC アクセス、プライベート Slack/Discord、合同グループオンボーディング"
+        }
+      },
+      "third": {
+        "place": "3位",
+        "credits": "$200 Claude クレジット",
+        "xverse": {
+          "tag": "Xverse キックスタートパッケージ",
+          "value": "価値 $196",
+          "details": "2ヶ月開発者プラン + RPC アクセス、合同グループオンボーディング"
+        }
+      },
+      "fourth": {
+        "place": "4位",
+        "credits": "$200 Claude Code クレジット"
+      },
+      "fifth": {
+        "place": "5位",
+        "credits": "$200 Claude Code クレジット"
       }
     },
     "phases": {
       "kickoff": {
-        "title": "キックオフ",
-        "date": "[日付を挿入]"
+        "title": "コンテスト開始",
+        "date": "2月9日（月曜日）"
       },
       "submission": {
-        "title": "提出期間",
-        "duration": "7日間"
+        "title": "提出締切",
+        "date": "2月23日（月曜日）- 00:00",
+        "duration": "14日間"
       },
-      "voting": {
-        "title": "投票期間",
-        "duration": "コミュニティ（2日）+ 審議会（5日）"
+      "publicVote": {
+        "title": "公開投票",
+        "date": "2月24日〜25日",
+        "announcement": "受賞者発表：2月25日"
+      },
+      "councilVote": {
+        "title": "審議会投票",
+        "date": "2月25日〜28日",
+        "announcement": "最終受賞者発表：2月28日"
       }
     },
     "evaluation": {
@@ -132,12 +173,66 @@
       "github": "Githubリポジトリ",
       "faucet": "フォーセット",
       "midlExplorer": "Midlエクスプローラー",
-      "btcExplorer": "ビットコインエクスプローラー"
+      "btcExplorer": "ビットコインエクスプローラー",
+      "xverse": "Xverse ウォレット",
+      "contestDetails": "コンテスト詳細"
     },
     "support": {
       "title": "サポート＆雰囲気",
       "description": "会話に参加し、チームメイトを見つけ、勝利を共有しましょう。",
       "button": "Discordに参加"
+    }
+  },
+  "council": {
+    "title": "審議会",
+    "subtitle": "グランプリ受賞者を選出する審査員をご紹介",
+    "comingSoon": "審議会メンバーは近日発表予定",
+    "members": {
+      "member1": {
+        "name": "審査員名",
+        "catchphrase": "ビットコインの未来を構築する",
+        "bio": {
+          "line1": "経歴プレースホルダー1行目",
+          "line2": "経歴プレースホルダー2行目",
+          "line3": "経歴プレースホルダー3行目"
+        }
+      },
+      "member2": {
+        "name": "審査員名",
+        "catchphrase": "世界中の開発者をエンパワー",
+        "bio": {
+          "line1": "経歴プレースホルダー1行目",
+          "line2": "経歴プレースホルダー2行目",
+          "line3": "経歴プレースホルダー3行目"
+        }
+      },
+      "member3": {
+        "name": "審査員名",
+        "catchphrase": "シンプルさによるイノベーション",
+        "bio": {
+          "line1": "経歴プレースホルダー1行目",
+          "line2": "経歴プレースホルダー2行目",
+          "line3": "経歴プレースホルダー3行目"
+        }
+      },
+      "member4": {
+        "name": "審査員名",
+        "catchphrase": "コードは詩である",
+        "bio": {
+          "line1": "経歴プレースホルダー1行目",
+          "line2": "経歴プレースホルダー2行目",
+          "line3": "経歴プレースホルダー3行目"
+        }
+      },
+      "member5": {
+        "name": "審査員名",
+        "catchphrase": "すべてを分散化する",
+        "bio": {
+          "line1": "経歴プレースホルダー1行目",
+          "line2": "経歴プレースホルダー2行目",
+          "line3": "経歴プレースホルダー3行目"
+        }
+      }
     }
   },
   "cta": {

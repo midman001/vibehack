@@ -15,7 +15,8 @@
       "submit": "dApp'inizi Gönderin"
     },
     "deadline": "Son teslim tarihine kadar",
-    "typewriter": "Bu, en kıdemli geliştiricimiz tarafından yapıldı. Tek bir satır koda bakmadı. Bunu kabul edin"
+    "typewriter": "Bu, en kıdemli geliştiricimiz tarafından yapıldı. Tek bir satır koda bakmadı. Bunu kabul edin",
+    "sponsoredBy": "Sponsoru"
   },
   "mission": {
     "title": "Görev",
@@ -56,6 +57,10 @@
         "step5": {
           "title": "Geri Bildirim Döngüsü",
           "description": "Arayüz, yeni durumu yansıtacak şekilde güncellenir."
+        },
+        "step6": {
+          "title": "Xverse Wallet Kullan",
+          "description": "Kullanıcılarınızın ağa bağlanmasını sağlamak için Xverse cüzdanını entegre edin"
         }
       }
     },
@@ -86,29 +91,65 @@
     "title": "Plan",
     "sectionTitle": "Zaman Çizelgesi",
     "prizes": {
-      "grand": {
-        "title": "Büyük Ödül",
-        "amount": "$1000 USDT",
-        "description": "En iyi vibe kodlayıcı için."
+      "title": "Ödül Havuzu",
+      "note": "Halk oylamasıyla seçilen ilk 5",
+      "first": {
+        "place": "1. Sıra",
+        "cash": "$1000 USDT",
+        "credits": "+ $200 Claude Kredisi",
+        "xverse": {
+          "tag": "Xverse Scale-Up Paketi",
+          "value": "Değeri $490 + Mentorluk",
+          "details": "5 Aylık Geliştirici Planı + RPC Erişimi, Xverse mühendislik ekibiyle özel Slack/Discord, Ortak Grup Onboarding"
+        },
+        "badge": "Konsey Tarafından Seçildi"
       },
-      "community": {
-        "title": "Topluluk Ödülü",
-        "amount": "CLAUDE kredisi",
-        "description": "İlk 5 katılımcı için $200 kredi"
+      "second": {
+        "place": "2. Sıra",
+        "credits": "$200 Claude Kredisi",
+        "xverse": {
+          "tag": "Xverse Builders Paketi",
+          "value": "Değeri $294 + Mentorluk",
+          "details": "3 Aylık Geliştirici Planı + RPC Erişimi, Özel Slack/Discord, Ortak Grup Onboarding"
+        }
+      },
+      "third": {
+        "place": "3. Sıra",
+        "credits": "$200 Claude Kredisi",
+        "xverse": {
+          "tag": "Xverse Kickstart Paketi",
+          "value": "Değeri $196",
+          "details": "2 Aylık Geliştirici Planı + RPC Erişimi, Ortak Grup Onboarding"
+        }
+      },
+      "fourth": {
+        "place": "4. Sıra",
+        "credits": "$200 Claude Code Kredisi"
+      },
+      "fifth": {
+        "place": "5. Sıra",
+        "credits": "$200 Claude Code Kredisi"
       }
     },
     "phases": {
       "kickoff": {
-        "title": "Başlangıç",
-        "date": "[Tarih girilecek]"
+        "title": "Yarışma Başlangıcı",
+        "date": "Pazartesi, 9 Şubat"
       },
       "submission": {
-        "title": "Başvuru Dönemi",
-        "duration": "7 gün"
+        "title": "Başvurular Kapanışı",
+        "date": "Pazartesi, 23 Şubat - 00:00",
+        "duration": "14 Gün"
       },
-      "voting": {
-        "title": "Oylama Dönemi",
-        "duration": "Topluluk (2 gün) + Jüri (5 gün)"
+      "publicVote": {
+        "title": "Halk Oylaması",
+        "date": "24-25 Şubat",
+        "announcement": "Kazananlar 25 Şubat'ta açıklanacak"
+      },
+      "councilVote": {
+        "title": "Konsey Oylaması",
+        "date": "25-28 Şubat",
+        "announcement": "Final kazananları 28 Şubat'ta açıklanacak"
       }
     },
     "evaluation": {
@@ -132,12 +173,66 @@
       "github": "Github Deposu",
       "faucet": "Musluk",
       "midlExplorer": "Midl Gezgini",
-      "btcExplorer": "Bitcoin Gezgini"
+      "btcExplorer": "Bitcoin Gezgini",
+      "xverse": "Xverse Wallet",
+      "contestDetails": "Yarışma Detayları"
     },
     "support": {
       "title": "Destek ve Atmosfer",
       "description": "Sohbete katılın, takım arkadaşları bulun ve zaferlerinizi paylaşın.",
       "button": "Discord'a Katıl"
+    }
+  },
+  "council": {
+    "title": "Konsey",
+    "subtitle": "Büyük ödül kazananını seçecek jüriyle tanışın",
+    "comingSoon": "Konsey üyeleri yakında açıklanacak",
+    "members": {
+      "member1": {
+        "name": "Jüri Adı",
+        "catchphrase": "Bitcoin'in geleceğini inşa etmek",
+        "bio": {
+          "line1": "Yer tutucu biyografi satırı 1",
+          "line2": "Yer tutucu biyografi satırı 2",
+          "line3": "Yer tutucu biyografi satırı 3"
+        }
+      },
+      "member2": {
+        "name": "Jüri Adı",
+        "catchphrase": "Dünya genelinde geliştiricileri güçlendirmek",
+        "bio": {
+          "line1": "Yer tutucu biyografi satırı 1",
+          "line2": "Yer tutucu biyografi satırı 2",
+          "line3": "Yer tutucu biyografi satırı 3"
+        }
+      },
+      "member3": {
+        "name": "Jüri Adı",
+        "catchphrase": "Basitlik yoluyla inovasyon",
+        "bio": {
+          "line1": "Yer tutucu biyografi satırı 1",
+          "line2": "Yer tutucu biyografi satırı 2",
+          "line3": "Yer tutucu biyografi satırı 3"
+        }
+      },
+      "member4": {
+        "name": "Jüri Adı",
+        "catchphrase": "Kod şiirdir",
+        "bio": {
+          "line1": "Yer tutucu biyografi satırı 1",
+          "line2": "Yer tutucu biyografi satırı 2",
+          "line3": "Yer tutucu biyografi satırı 3"
+        }
+      },
+      "member5": {
+        "name": "Jüri Adı",
+        "catchphrase": "Her şeyi merkeziyetsizleştirmek",
+        "bio": {
+          "line1": "Yer tutucu biyografi satırı 1",
+          "line2": "Yer tutucu biyografi satırı 2",
+          "line3": "Yer tutucu biyografi satırı 3"
+        }
+      }
     }
   },
   "cta": {

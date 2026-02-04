@@ -68,7 +68,15 @@ const Mission: React.FC = () => {
                 <p>{t('mission.requirements.steps.step5.description')}</p>
               </div>
             </div>
+            <div className="checkpoint">
+              <div className="marker">6</div>
+              <div className="content">
+                <h4>{t('mission.requirements.steps.step6.title')}</h4>
+                <p>{t('mission.requirements.steps.step6.description')}</p>
+              </div>
+            </div>
           </div>
+          <p className="requirements-note">Steps 1-6 form the complete user flow from design to on-chain verification.</p>
         </div>
 
         <div className="deliverables-section">
@@ -146,41 +154,33 @@ const Mission: React.FC = () => {
         }
 
         .roadmap {
-            display: flex;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 1rem;
             position: relative;
             margin-top: 3rem;
-            flex-wrap: wrap;
-            gap: 2rem;
         }
 
         .roadmap::before {
             content: '';
             position: absolute;
-            top: 25px;
-            left: 0;
-            right: 0;
+            top: 20px;
+            left: 5%;
+            right: 5%;
             height: 2px;
             background: var(--color-border);
             z-index: 0;
-            display: none; /* Hidden on mobile/wrap */
-        }
-
-        @media (min-width: 768px) {
-            .roadmap::before { display: block; }
         }
 
         .checkpoint {
             position: relative;
             z-index: 1;
-            flex: 1;
-            min-width: 150px;
             text-align: center;
         }
 
         .marker {
-            width: 50px;
-            height: 50px;
+            width: 40px;
+            height: 40px;
             background: var(--color-bg-deep);
             border: 2px solid var(--color-accent-primary);
             color: var(--color-accent-primary);
@@ -189,20 +189,52 @@ const Mission: React.FC = () => {
             align-items: center;
             justify-content: center;
             font-weight: 500;
-            font-size: 1.2rem;
-            margin: 0 auto 1rem;
+            font-size: 1rem;
+            margin: 0 auto 0.75rem;
             box-shadow: 0 0 15px rgba(247, 147, 26, 0.2);
         }
 
         .checkpoint h4 {
-            font-size: 1.1rem;
-            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            margin-bottom: 0.35rem;
             color: var(--color-text-main);
         }
 
         .checkpoint p {
-            font-size: 0.9rem;
+            font-size: 0.75rem;
             color: var(--color-text-muted);
+            line-height: 1.3;
+        }
+
+        @media (max-width: 900px) {
+            .roadmap {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1.5rem 1rem;
+            }
+
+            .roadmap::before {
+                display: none;
+            }
+
+            .marker {
+                width: 36px;
+                height: 36px;
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .roadmap {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .requirements-note {
+            text-align: center;
+            color: var(--color-text-muted);
+            font-size: 0.85rem;
+            margin-top: 2rem;
+            font-style: italic;
         }
 
         .deliverables-section {
