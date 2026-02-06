@@ -13,7 +13,7 @@ function App() {
       <Hero />
       <Mission />
       <Timeline />
-      <Council />
+      {/* <Council /> */}
       <Toolkit />
       <CTASection />
       <Footer />
